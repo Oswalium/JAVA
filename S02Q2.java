@@ -1,13 +1,13 @@
 import java.util.*;
 
-public class cric {
+public class CRIC {
     String name;
     int noofinnings;
     int noofnotouts;
     int totalruns;
     double batavg;
 
-    public cric(String name, int noofinnings, int noofnotouts, int totalruns) {
+    public CRIC(String name, int noofinnings, int noofnotouts, int totalruns) {
         this.name = name;
         this.noofinnings = noofinnings;
         this.noofnotouts = noofnotouts;
@@ -15,11 +15,11 @@ public class cric {
         this.batavg = totalruns / (noofinnings - noofnotouts);
     }
 
-    public static void sortplayers(cric[] p) {
+    public static void sortplayers(CRIC[] p) {
         for (int i = 0; i < p.length - 1; i++) {
             for (int j = 0; j < p.length - 1 - i; j++)
                 if (p[j].batavg < p[j + 1].batavg) {
-                    cric temp = p[j];
+                    CRIC temp = p[j];
                     p[j] = p[j + 1];
                     p[j + 1] = temp;
                 }
@@ -41,7 +41,7 @@ public class cric {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter number of players: ");
         int n = scan.nextInt();
-        cric[] p = new cric[n];
+        CRIC[] p = new CRIC[n];
         for (int i = 0; i < n; i++) {
             scan.nextLine();
             System.out.println("Enter Details for player" + (i + 1) + ":");
@@ -53,9 +53,9 @@ public class cric {
             int noofnotouts = scan.nextInt();
             System.out.println("Total runs: ");
             int totalruns = scan.nextInt();
-            p[i] = new cric(name, noofinnings, noofnotouts, totalruns);
+            p[i] = new CRIC(name, noofinnings, noofnotouts, totalruns);
         }
-        cric.sortplayers(p);
+        CRIC.sortplayers(p);
         for (int i = 0; i < n; i++) {
             p[i].display();
             System.out.println("-------------------------");
