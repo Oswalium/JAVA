@@ -3,7 +3,7 @@ abstract class order
 {
      int id,id1;
      String name,des,name1,des1;
-     is.des1=des1;
+
 }
 class purchase extends order
 {
@@ -49,7 +49,7 @@ class purchase extends order
              dp(id1,name1,des1); 
        }
  }
- class ORDERS
+ class ORDER
 {
        public static void main(String args[])
        {
@@ -65,6 +65,7 @@ class purchase extends order
                   o[j].input();
                   System.out.print("\n");
                   o1[j].ip();
+                  
               }
 
        }  
