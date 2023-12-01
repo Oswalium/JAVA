@@ -8,9 +8,6 @@ class GUI extends JFrame implements ActionListener {
     JRadioButton r1, r2, r3;
     JCheckBox c1, c2, c3;
     JCheckBox d1, d2, d3;
-    String[] font = new String[] { "Arial", "Underlined" };
-    int[] size = new int[] { 1, 2 };
-
     JTextField t1, t2;
     ButtonGroup b1;
     JPanel p1, p2;
