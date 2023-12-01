@@ -14,7 +14,7 @@ public class MATRIX
            for (int i=0;i<matrix.length;i++)
                 for (int j=0;j<matrix.length;j++)
                      matrix[i][j]=scan.nextInt();
-           System.out.println("Sum of Diagonal elements is:");
+        
            int mat1[][] = new int[r][c];
            for (int i=0;i<matrix.length;i++)
                 for (int j=0;j<matrix.length;j++)  
